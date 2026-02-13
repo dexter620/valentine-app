@@ -13,16 +13,22 @@
 <iframe 
     id="ytMusic"
     width="0" height="0"
-    src="https://www.youtube.com/embed/wuO9I8oGI_Y?autoplay=1&loop=1&playlist=wuO9I8oGI_Y"
+    src="https://www.youtube.com/embed/wuO9I8oGI_Y?enablejsapi=1&loop=1&playlist=wuO9I8oGI_Y"
     frameborder="0"
     allow="autoplay"
 ></iframe>
 </div>
 
+<!-- Conteneur pour animations -->
+<div id="animations"></div>
+
 <div class="container">
 
     <h1>Khalil ❤️ Kenza</h1>
     <p class="subtitle">J’ai une lettre pour toi…</p>
+
+    <!-- BOUTON MUSIQUE -->
+    <button id="musicBtn" class="big-btn">▶ Jouer la Musique</button>
 
     <!-- ENVELOPPE -->
     <div class="envelope" id="envelope">
@@ -43,6 +49,7 @@
 
 </div>
 
+<script src="https://www.youtube.com/iframe_api"></script>
 <script src="script.js"></script>
 </body>
 </html>
