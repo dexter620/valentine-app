@@ -1,56 +1,59 @@
-const noBtn = document.getElementById("no");
-const yesBtn = document.getElementById("yes");
+const envelope = document.getElementById("envelope");
+const letter = document.getElementById("letter");
+const typedText = document.getElementById("typedText");
+const timeTogether = document.getElementById("timeTogether");
 
-const main = document.getElementById("main");
-const love = document.getElementById("love");
+const message = `
+Hbiba dyali ❤️
 
-// No button escape
+Mn nhar 10 juillet 2022 w hyati tbdlat kamla...
+Nti sbab dyal sa3ada dyali,
+Nti ahla haja wa9a3at lia.
 
-noBtn.addEventListener("mouseover", () => {
+Kanbghik kter mn ay haja f had denya,
+W kan7lm nb9aw m3a b3d dyma.
 
-const x = Math.random() * window.innerWidth;
-const y = Math.random() * window.innerHeight;
+Love you forever 💖
+`;
 
-noBtn.style.left = x + "px";
-noBtn.style.top = y + "px";
+let i = 0;
 
-});
+/* Effet machine à écrire */
+function typeWriter(){
+if(i < message.length){
+typedText.innerHTML += message.charAt(i);
+i++;
+setTimeout(typeWriter, 35);
+}
+}
 
-// Yes click
-
-yesBtn.addEventListener("click", () => {
-
-main.classList.add("hidden");
-love.classList.remove("hidden");
-
-startHearts();
-
-});
-
-// hearts animation
-
-function startHearts(){
+/* Calcul du temps ensemble */
+function startCounter(){
+const startDate = new Date("2022-07-10T00:00:00");
 
 setInterval(() => {
+const now = new Date();
+const diff = now - startDate;
 
-const heart = document.createElement("div");
+const days = Math.floor(diff / (1000*60*60*24));
+const hours = Math.floor(diff / (1000*60*60));
+const minutes = Math.floor(diff / (1000*60));
+const seconds = Math.floor(diff / 1000);
 
-heart.classList.add("heart");
+timeTogether.innerHTML =
+days + " jours ❤️<br>" +
+hours + " heures 💕<br>" +
+minutes + " minutes 💖<br>" +
+seconds + " secondes 💘";
 
-heart.innerHTML = "❤️";
-
-heart.style.left = Math.random()*100+"vw";
-
-heart.style.fontSize = Math.random()*30+20+"px";
-
-document.body.appendChild(heart);
-
-setTimeout(()=>{
-
-heart.remove();
-
-},4000);
-
-},300);
-
+},1000);
 }
+
+/* Ouvrir la lettre */
+envelope.addEventListener("click", function(){
+envelope.style.display="none";
+letter.style.display="block";
+
+typeWriter();
+startCounter();
+});
