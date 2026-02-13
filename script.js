@@ -32,6 +32,13 @@ rajl m3ak Nti ahla haja wa9a3at lia. dzna mn bzzf so3obat whmd
 hna m3a b3diyatna knt3lmo wknt3aljo yed f yed tanwslo 
 wnh9o ahlamna wnwslo ldkchi kaaaml li knhlmo bih yarbi 
 Love you forever 💖
+like had msg li angol db hhhh mora machft had haja kifach 
+t annimat like ccuuuute like bkiit wnzlo liya dmmooo3 bzzf l db 
+knktb wmzl kinzlo like blfarah b cutness b ano kk bzzzzzf
+wbari atkoni fr7ana wlh, fach glti ano fr7ty fach jbt lik 
+trompe oeil like 3jbni lhal wkda wntmna had haja tahiya 
+tkon zwina hwlt nfkr bach ikon had 3id hob mkhtaf 3la 
+lkhrin w ay haja wndir fih mjhood wkda kk.
 `;
 
 let i = 0;
@@ -40,7 +47,7 @@ function typeWriter(){
 if(i < message.length){
 typedText.innerHTML += message.charAt(i);
 i++;
-setTimeout(typeWriter, 50);
+setTimeout(typeWriter, 90);
 }
 }
 
@@ -102,4 +109,5 @@ if(player && !musicPlaying){
     musicPlaying = false;
 }
 });
+
 
