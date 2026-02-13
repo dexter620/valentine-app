@@ -20,14 +20,17 @@ const animationsContainer = document.getElementById("animations");
 
 const message = `
 Hbiba dyali ❤️
-
+awln w9bel kolchi kk bzzf nty zwina nty batala nty 
+fena wghzala dyali wboohdi kk bzzf nty chmi3a dyal hyaaaty 
+chmi3a wnnooor li mdwi 9lbi nty rouuu7 w energie dyali 
+kk bzf rbi ihfdek liya wihmik wi3wnk wichafik liya 
+kk abb kk wkola nhar knzid kk albtala ghzala dyaaali 
 Mn nhar 10 juillet 2022 w hyati tbdlat kamla...
-Nti sbab dyal sa3ada dyali,
-Nti ahla haja wa9a3at lia.
-
-Kanbghik kter mn ay haja f had denya,
-W kan7lm nb9aw m3a b3d dyma.
-
+Nti sbab dyal sa3ada dyali, wlike m3ak t3lmt bzzzf hajat ahbiba
+t3lmt looove t3lmt kifach n3amlk t3lmt kifach nkon 
+rajl m3ak Nti ahla haja wa9a3at lia. dzna mn bzzf so3obat whmd
+hna m3a b3diyatna knt3lmo wknt3aljo yed f yed tanwslo 
+wnh9o ahlamna wnwslo ldkchi kaaaml li knhlmo bih yarbi 
 Love you forever 💖
 `;
 
@@ -37,7 +40,7 @@ function typeWriter(){
 if(i < message.length){
 typedText.innerHTML += message.charAt(i);
 i++;
-setTimeout(typeWriter, 35);
+setTimeout(typeWriter, 50);
 }
 }
 
@@ -99,3 +102,4 @@ if(player && !musicPlaying){
     musicPlaying = false;
 }
 });
+
