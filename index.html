@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Valentine ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lettre d'Amour ❤️</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container" id="main">
-
-<h1>Will you be my Valentine? ❤️</h1>
-
-<div class="buttons">
-<button id="yes">Yes ❤️</button>
-<button id="no">No 💔</button>
+<!-- 🎵 YOUTUBE VIDEO (invisible) -->
+<div id="ytPlayer">
+<iframe 
+    id="ytMusic"
+    width="0" height="0"
+    src="https://www.youtube.com/embed/wuO9I8oGI_Y?autoplay=1&loop=1&playlist=wuO9I8oGI_Y"
+    frameborder="0"
+    allow="autoplay"
+></iframe>
 </div>
 
-</div>
+<div class="container">
 
-<div class="container hidden" id="love">
+    <h1>Khalil ❤️ Kenza</h1>
+    <p class="subtitle">J’ai une lettre pour toi…</p>
 
-<h1>I love you so much ❤️</h1>
-<p>You make my life beautiful 💕</p>
+    <!-- ENVELOPPE -->
+    <div class="envelope" id="envelope">
+        💌
+        <p>Clique ici pour ouvrir</p>
+    </div>
 
-<div class="hearts"></div>
+    <!-- LETTRE -->
+    <div class="letter" id="letter">
+        <p id="typedText"></p>
+
+        <!-- COMPTEUR -->
+        <div class="counter">
+            <h3>Depuis le 10 Juillet 2022 💖</h3>
+            <p id="timeTogether"></p>
+        </div>
+    </div>
 
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
